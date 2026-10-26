@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Star Rating 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-29 00:00+0000\n"
+"PO-Revision-Date: 2026-07-29 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Persian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fa_IR\n"
+"X-Domain: star-rating\n"
+
+#. Plugin Name of the plugin
+msgid "Star Rating"
+msgstr "امتیازدهی ستاره‌ای"
+
+#. Description of the plugin
+msgid "A 1-to-5 star rating system for posts, with guest user support, plus a built-in like/dislike reaction add-on."
+msgstr "سیستم امتیازدهی ستاره‌ای (۱ تا ۵) برای پست‌ها، با پشتیبانی از کاربران مهمان، به‌همراه افزونه‌ی داخلیِ واکنش لایک/دیسلایک."
+
+#. Author of the plugin
+msgid "Moein Akbari"
+msgstr "معین اکبری"

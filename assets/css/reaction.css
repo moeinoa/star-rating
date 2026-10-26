@@ -1,0 +1,76 @@
+.sr-reaction-widget {
+	--sr-reaction-color: #f5a623;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	font-family: inherit;
+}
+.sr-reaction-btn {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	border: none;
+	background: unset;
+	cursor: pointer;
+	font-size: 14px;
+	color: #555;
+	transition: all 0.3s ease;
+}
+.sr-reaction-btn:hover {
+	transform: scale(1.05);
+}
+/*.sr-reaction-btn:focus {*/
+/*	outline: 2px solid #999;*/
+/*	outline-offset: 2px;*/
+/*}*/
+
+/* آیکون SVG: رنگ از طریق currentColor به یک CSS variable واحد (--sr-reaction-color)
+ * وصل می‌شود؛ چه حالت outline چه bold، همیشه همین یک رنگ استفاده می‌شود -
+ * دقیقاً مشابه الگوی --sr-star-color در ویجت ستاره‌ای. */
+.sr-reaction-icon {
+	display: inline-flex;
+	align-items: center;
+	line-height: 1;
+	color: var(--sr-reaction-color);
+}
+.sr-reaction-icon svg {
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+/* پیش‌فرض: فقط حالت outline نشان داده می‌شود، bold مخفی است. */
+.sr-reaction-btn .sr-reaction-icon-bold {
+	display: none;
+}
+.sr-reaction-btn .sr-reaction-icon-outline {
+	display: inline-flex;
+}
+
+/* وقتی کاربر روی این دکمه رای داده (sr-reaction-active): حالت bold نشان
+ * داده می‌شود و outline مخفی می‌شود. رنگ همان --sr-reaction-color باقی
+ * می‌ماند؛ فقط شکل آیکون (outline -> bold) عوض می‌شود. */
+.sr-reaction-btn.sr-reaction-active .sr-reaction-icon-outline {
+	display: none;
+}
+.sr-reaction-btn.sr-reaction-active .sr-reaction-icon-bold {
+	display: inline-flex;
+}
+
+.sr-reaction-count {
+	font-size: 13px;
+	min-width: 12px;
+	text-align: center;
+}
+.sr-reaction-message {
+	font-size: 13px;
+	min-height: 18px;
+}
+.sr-reaction-message.sr-reaction-message-error {
+	color: #c62828;
+}
+.sr-reaction-widget.sr-reaction-loading {
+	opacity: 0.6;
+	pointer-events: none;
+}

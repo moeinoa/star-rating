@@ -1,0 +1,57 @@
+.sr-rating-widget {
+	--sr-star-color: #f5a623;
+	display: flex;
+	flex-direction: row;
+	gap: 6px;
+	font-family: inherit;
+	align-content: center;
+	margin: 5px 10px;
+	order: 2;
+}
+.sr-stars {
+	display: flex;
+	gap: 2px;
+	direction: ltr;
+	justify-content: flex-end;
+}
+.sr-star {
+	font-size: 26px;
+	color: #d3d3d3;
+	cursor: pointer;
+	transition: color 0.15s ease, transform 0.1s ease;
+	user-select: none;
+	line-height: 25px;
+	height: auto;
+}
+.sr-star:hover,
+.sr-star.sr-star-hover {
+	transform: scale(1.15);
+}
+.sr-star.sr-star-active,
+.sr-star.sr-star-hover-active {
+	color: var(--sr-star-color);
+}
+.sr-star:focus {
+	outline: 2px solid var(--sr-star-color);
+	outline-offset: 2px;
+	border-radius: 4px;
+}
+.sr-rating-info {
+	font-size: 14px;
+	color: #555;
+	line-height: 25px;
+}
+.sr-message {
+	font-size: 13px;
+	min-height: 18px;
+}
+.sr-message.sr-message-success {
+	color: #2e7d32;
+}
+.sr-message.sr-message-error {
+	color: #c62828;
+}
+.sr-rating-widget.sr-loading {
+	opacity: 0.6;
+	pointer-events: none;
+}
